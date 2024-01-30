@@ -4,7 +4,7 @@ const passport = require("passport");
 const env = require("dotenv").config()
 
 // console.log(process.env.MONGO)
-// mongoose.connect(`mongodb+srv://pixil:oEn0xUaQiDiUMZEt@cluster0.qeef3.mongodb.net/course?retryWrites=true&w=majority`)
+
 mongoose.connect(`${process.env.MONGO}`)
 .then((res)=>{
     console.log("Connected to database");
